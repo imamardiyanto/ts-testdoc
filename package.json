@@ -1,0 +1,13 @@
+{
+  "name": "ts-testdoc-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "testdoc": "pnpm --filter example-lib testdoc",
+    "build": "pnpm --filter ts-testdoc build",
+    "knip": "knip"
+  },
+  "devDependencies": {
+    "knip": "^5.78.0"
+  }
+}

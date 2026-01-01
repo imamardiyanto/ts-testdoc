@@ -1,0 +1,18 @@
+{
+  "name": "example-lib",
+  "version": "1.0.0",
+  "description": "Example library to test ts-testdoc",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "testdoc": "tsx ../ts-testdoc/src/cli.ts src/"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "lodash": "^4.17.21",
+    "@types/lodash": "^4.17.0"
+  }
+}

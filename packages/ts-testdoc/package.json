@@ -1,0 +1,21 @@
+{
+  "name": "ts-testdoc",
+  "version": "1.0.0",
+  "description": "Run code examples from JSDoc comments as tests, like Rust's rustdoc --test",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ts-testdoc": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": ["typescript", "jsdoc", "doctest", "testing"],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0"
+  }
+}

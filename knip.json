@@ -1,0 +1,8 @@
+{
+  "workspaces": {
+    "packages/ts-testdoc": {},
+    "packages/example-lib": {
+      "ignoreDependencies": ["lodash", "@types/lodash"]
+    }
+  }
+}
